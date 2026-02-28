@@ -5,19 +5,23 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 :root\{\
-  --bg: #0b1220;\
-  --card: rgba(255,255,255,.06);\
-  --card2: rgba(255,255,255,.09);\
-  --text: rgba(255,255,255,.92);\
-  --muted: rgba(255,255,255,.72);\
-  --line: rgba(255,255,255,.14);\
-  --accent: #7dd3fc; /* hellblau */\
-  --accent2: #a78bfa; /* violett */\
-  --shadow: 0 20px 60px rgba(0,0,0,.35);\
-  --radius: 18px;\
-  --radius2: 14px;\
-  --max: 1100px;\
+\f0\fs24 \cf0 :root{
+  --bg: #0b0c0f;                 /* Haupt-Hintergrund (fast schwarz) */
+  --bg2: #0f1116;                /* Sekundärflächen */
+  --surface: rgba(255,255,255,.04);
+  --surface2: rgba(255,255,255,.06);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.68);
+  --line: rgba(255,255,255,.12);
+
+  --accent: #ffffff;             /* Akzent = weiß (sehr clean) */
+  --accent2: rgba(255,255,255,.72);
+
+  --shadow: 0 20px 60px rgba(0,0,0,.50);
+  --radius: 18px;
+  --radius2: 14px;
+  --max: 1100px;
+}
 \}\
 \
 *\{box-sizing:border-box\}\
