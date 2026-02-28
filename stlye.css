@@ -26,16 +26,16 @@
 \
 *\{box-sizing:border-box\}\
 html\{scroll-behavior:smooth\}\
-body\{\
-  margin:0;\
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
-  background:\
-    radial-gradient(900px 500px at 10% 10%, rgba(125,211,252,.18), transparent 60%),\
-    radial-gradient(900px 500px at 90% 0%, rgba(167,139,250,.16), transparent 55%),\
-    radial-gradient(900px 600px at 70% 90%, rgba(125,211,252,.12), transparent 55%),\
-    var(--bg);\
-  color: var(--text);\
-\}\
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(900px 520px at 85% 0%, rgba(255,255,255,.05), transparent 55%),
+    radial-gradient(900px 620px at 60% 90%, rgba(255,255,255,.04), transparent 55%),
+    linear-gradient(180deg, #0b0c0f 0%, #090a0d 100%);
+  color: var(--text);
+}
 \
 a\{color:inherit; text-decoration:none\}\
 a:hover\{opacity:.92\}\
@@ -98,32 +98,34 @@ a:hover\{opacity:.92\}\
   color: var(--muted); font-weight:600; font-size:14px;\
 \}\
 h1\{font-size: clamp(34px, 4.2vw, 54px); line-height:1.06; margin:14px 0 10px\}\
-.accent\{\
-  background: linear-gradient(90deg, var(--accent), var(--accent2));\
-  -webkit-background-clip: text; background-clip:text; color: transparent;\
-\}\
+.accent{
+  color: rgba(255,255,255,.96);
+}\
 .lead\{color: var(--muted); font-size: 18px; line-height:1.6; margin: 0 0 18px\}\
 \
 .hero-cta\{display:flex; gap:12px; flex-wrap:wrap; margin: 18px 0 14px\}\
 \
-.btn\{\
-  display:inline-flex; align-items:center; justify-content:center;\
-  padding: 12px 16px; border-radius: 14px;\
-  border: 1px solid rgba(255,255,255,.22);\
-  background: linear-gradient(135deg, rgba(125,211,252,.22), rgba(167,139,250,.20));\
-  color: var(--text);\
-  font-weight:700;\
-  box-shadow: var(--shadow);\
-\}\
-.btn:hover\{transform: translateY(-1px)\}\
-.btn:active\{transform: translateY(0px)\}\
-.btn-small\{padding:10px 12px; border-radius:12px; box-shadow:none\}\
-.btn-ghost\{\
-  background: transparent;\
-  border: 1px solid var(--line);\
-  box-shadow:none;\
-  color: var(--muted);\
-\}\
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  font-weight:700;
+  box-shadow: var(--shadow);
+}
+.btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10)}
+.btn:active{transform: translateY(0px)}
+
+.btn-ghost{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow:none;
+  color: rgba(255,255,255,.78);
+}
 .btn-full\{width:100%\}\
 \
 .trust\{list-style:none; padding:0; margin: 12px 0 0; color: var(--muted)\}\
@@ -207,8 +209,8 @@ h1\{font-size: clamp(34px, 4.2vw, 54px); line-height:1.06; margin:14px 0 10px\}\
 .contact-grid\{display:grid; grid-template-columns: 1fr 1.1fr; gap:18px; align-items:start\}\
 .contact-cards\{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top: 16px\}\
 .contact-card\{\
-  background: rgba(255,255,255,.05);\
-  border: 1px solid var(--line);\
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
   border-radius: var(--radius2);\
   padding: 14px;\
 \}\
